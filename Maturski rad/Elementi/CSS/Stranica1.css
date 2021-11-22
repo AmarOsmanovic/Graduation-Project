@@ -1,0 +1,975 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*background-color: #24252A;*/
+}
+
+body{
+background-color: #dcdcdc;
+font-family: "calibri";
+}
+
+.bahami{
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0) ;
+
+}
+.naslov{
+  font-family: Ubuntu ,sans-serif;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 11px;
+  color: rgb(0, 0, 0);
+
+}
+
+#naslov1{
+  position: absolute;
+  top: 220px;
+  left: 400px;
+}
+
+#naslov2{
+  position: absolute;
+  top: 263px;
+  left: 330px;
+}
+.li1 ,.a1 ,.a2 , .button1{
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #000080;
+
+
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.nav_linkovi{
+  list-style: none;
+    cursor: pointer;
+}
+
+.nav_linkovi li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_linkovi li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_linkovi li .a2:hover{
+  color: #0088a9;
+
+}
+.a1{
+  color: #0088a9;
+  text-decoration: underline;
+}
+.a1:hover{
+  color: white;
+}
+.button1{
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  transition: width .3s
+}
+
+.button1:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+
+}
+
+.nav_linkovi li a:visited{
+border:solid;
+}
+
+
+
+/*############### lOGIN FORMA##########*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.loginbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  border: none;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+.let{
+  height: 200px;
+  width: 900px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2) ;
+  border-width: thin;
+  border-radius: 10px;
+  position: relative;
+  top: -70px;
+  left: 40px;
+  margin-top: 2%;
+  background: white;
+}
+
+.bar{
+width: 150px;
+height: auto;
+position: absolute;
+top: 7px;
+left: 182px;
+}
+
+.datum{
+  position: absolute;
+  font-size: 17px;
+  top: 27px;
+  left: 420px;
+  color: #707070;
+}
+
+.polazak{
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  top: 90px;
+  left: 170px;
+}
+
+.strelica{
+  position: absolute;
+  top: 93px;
+  left: 252px;
+}
+
+.dolazak{
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  top: 90px;
+  left: 300px;
+}
+
+.sat{
+  position: absolute;
+  font-size: 14px;
+  top: 95px;
+  left: 365px;
+  color: #707070;
+}
+
+.presjedanje{
+position: absolute;
+font-size: 16px;
+font-weight: bold;
+top: 20px;
+right: 30px;
+}
+
+.klasa{
+  position: absolute;
+  font-size: 14px;
+  top: 40px;
+  right: 30px;
+}
+
+
+
+.detalji {
+  position:absolute;
+  font-size:17px;
+  cursor: pointer;
+  top: 120px;
+  right: 30px;
+  text-decoration: underline;
+  color: #0033CC;
+}
+
+.wifi{
+  position: absolute;
+  bottom: 60px;
+  right: 220px;
+}
+
+.tv{
+  position: absolute;
+  bottom: 60px;
+  right: 185px;
+}
+
+.hrana{
+  position: absolute;
+  bottom: 60px;
+  right: 120px;
+}
+
+.pice{
+  position: absolute;
+  bottom: 59px;
+  right: 150px;
+}
+
+.kofer{
+  position: absolute;
+  bottom: 60px;
+  right: 90px;
+}
+
+.napomena{
+  color: #888;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*######  PROZOR SA DETALJIMA #############################################*/
+
+#prozor{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#prozor #LI{
+  position: absolute;
+  list-style: none;
+  top: 120px;
+  right: 10px;
+  width: 40px;
+  height: 15px;
+  background: white;
+  margin: 0 20px;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+#LI{
+  font-size:17px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0033CC;
+}
+
+
+#prozor #LI .sadrzaj{
+  position: absolute;
+  bottom: 45px;
+  height: 200px;
+  width: 400px;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #F5F5F5	;
+  transition: 0.5s;
+  box-shadow: 0 5px 15px rgba(0,0,128,0.5) ;
+  transform: translateX(-50%) translateY(0px);
+}
+
+
+#prozor #LI .sadrzaj:before{
+  content:'';
+  position:absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #F5F5F5	;
+  bottom: -15px;
+  left: 199px;
+  transform: rotate(45deg);
+
+}
+#prozor #LI:hover .sadrzaj{
+  visibility: visible;
+  opacity: 1;
+}
+
+.prozorNaslov{
+  color: black;
+  font-size: 22px;
+  font-family: "Montserrat",sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.pKofer{
+  position: absolute;
+  color: #004526;
+  left: 24px;
+  top: 70px;
+  font-size: 14px;
+  font-family: "Montserrat",sans-serif;
+}
+
+.pPice{
+  position: absolute;
+  color: #004526;
+  left: 20px;
+  top: 140px;
+  font-size: 14px;
+  font-family: "Montserrat",sans-serif;
+}
+
+.pHrana{
+  position: absolute;
+  color: #004526;
+  left: 22px;
+  top: 105px;
+  font-size: 14px;
+  font-family: "Montserrat",sans-serif;
+}
+
+.pTv{
+  position: absolute;
+  color: #004526;
+  right: 20px;
+  top: 70px;
+  font-size: 14px;
+  font-family: "Montserrat",sans-serif;
+}
+
+.pWifi{
+  position: absolute;
+  color: #004526;
+  right: 20px;
+  top: 105px;
+  font-size: 14px;
+  font-family: "Montserrat",sans-serif;
+}
+/*######  BOX SA CIJENOM  #####################################################################*/
+
+.box{
+  height: 200px;
+  width: 350px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2) ;
+  border-width: thin;
+  border-radius: 10px;
+  position: relative;
+  left: 920px;
+  margin-top: 2%;
+  background: white;
+}
+
+.cijena{
+  position: absolute;
+  font-size: 30px;
+  top: 20px;
+  left: 43%;
+}
+
+.euro{
+  position: absolute;
+  font-size: 15px;
+  top: 32px;
+  left: 39%;
+}
+
+.info{
+  position: absolute;
+  font-size: 14px;
+  top: 65px;
+  left: 80px;
+}
+
+.izaberite{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  padding: 13px 37px;
+  background-color: #e43a4b;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  transition: width .3s
+}
+
+.izaberite:hover{
+  background-color: #e12336;
+}
+
+
+.share{
+  color: #3366ff;
+  font-size: 20px;
+  position: absolute;
+  top: 159px;
+  left:138px;
+}
+
+.share{
+  color: #3366ff;
+  font-size: 18px;
+  position: absolute;
+  top: 159px;
+  left: 136px;
+}
+.share1{
+  color: #3366ff;
+  font-size: 18px;
+  position: absolute;
+  top: 158px;
+  left: 158px;
+  cursor: pointer;
+}
+.share:hover , .share1:hover{
+  text-decoration: underline;
+}
+
+/*##############   LET 1   #############################################################*/
+
+.bihlogo{
+  height: 25px;
+  width: auto;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+.SJJ{
+ /*color: rgba(0, 136, 169, 1);*/
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+
+}
+
+.MMX{
+
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 340px;
+
+}
+
+/*################  LET 2  ###########################################################*/
+
+
+.arablogo{
+  height: 60px;
+  width: auto;
+  position: absolute;
+  top: 7px;
+  left: 27px;
+}
+
+.JED{
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+
+.SZX{
+
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 340px;
+}
+
+
+
+/*################  LET 3  ###########################################################*/
+
+.srblogo{
+  height: 25px;
+  width: auto;
+  position: absolute;
+  top: 24px;
+  left: 20px;
+}
+.BEG{
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+
+}
+
+.MOW{
+
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 340px;
+
+}
+
+/*################  LET 4  ###########################################################*/
+
+.austrianlogo{
+  height: 35px;
+  width: auto;
+  position: absolute;
+  top: 19px;
+  left: 30px;
+}
+.GRZ{
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+
+}
+
+.BCN{
+
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 340px;
+
+}
+
+
+/*##############   LET 5   #############################################################*/
+
+.dubailogo{
+  height: 28px;
+  width: auto;
+  position: absolute;
+  top: 22px;
+  left: 33px;
+}
+.DXB{
+ /*color: rgba(0, 136, 169, 1);*/
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+
+}
+
+.MUC{
+
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 340px;
+
+}
+
+
+/*##############   LET 6   #############################################################*/
+
+.qatlogo{
+  height: 26px;
+  width: auto;
+  position: absolute;
+  top: 22px;
+  left: 33px;
+}
+.DOH{
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+
+}
+
+.ADF{
+
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 340px;
+
+}
+
+/*##############   LET 7   #############################################################*/
+
+.wizzlogo{
+  height: 25px;
+  width: auto;
+  position: absolute;
+  top: 22px;
+  left: 33px;
+}
+.ACH{
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+
+}
+
+.VBY{
+
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 340px;
+
+}
+
+/*##############   LET 8   #############################################################*/
+
+.turlogo{
+  height: 28px;
+  width: auto;
+  position: absolute;
+  top: 22px;
+  left: 33px;
+}
+.IST{
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+
+}
+
+.GPA{
+
+  height: 100px;
+  width: 100px;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  left: 340px;
+
+}
+/*############  NAVIGACIJA ZA STRANICE  ###############################################################*/
+
+.Stranice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+
+}
+
+.sljedecaStranica{
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2) ;
+  position: relative;
+  display: flex;
+  align-content: space-between;
+}
+
+.sljedecaStranica {
+  list-style: none;
+  line-height: 50px;
+  margin: 0 5px;
+  width: 250px;
+  height: 80px;
+  text-align: center;
+}
+
+
+.prosla, .sljedeca{
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.prosla:hover ,
+.sljedeca:hover
+{
+  background: #333;
+  color: #fff;
+  border-radius: 50px;
+  padding: 1px 15px;
+
+}
+
+.prosla{
+  position: absolute;
+  left: 30px;
+  top: 15px;
+}
+
+.sljedeca{
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}
+
+/* ###### FOOTER #####*/
+
+
+.col_white_amrc { color:#FFF;}
+footer {
+   width:100%; 
+   background-color:#263238; 
+   min-height:250px; 
+   padding:10px 0px 25px 0px ;
+  }
+
+.pt2 {
+   padding-top:40px ; 
+   margin-bottom:20px ;
+  }
+
+footer p { 
+  font-size:13px; 
+  color:#CCC; 
+  padding-bottom:0px; 
+  margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;
+}
+
+.footer_ul_amrc {
+   margin:0px ;
+   list-style-type:none ;
+    font-size:14px;
+     padding:0px 0px 10px 0px ;
+     }
+
+
+.footer_ul_amrc li {
+  padding:0px 0px 5px 0px;
+}
+
+.footer_ul_amrc li a{ 
+  color:#CCC;
+}
+.footer_ul_amrc li a:hover{ 
+  color:#fff; 
+  text-decoration:none;
+}
+.fleft { 
+  float:left;
+}
+
+.padding-right { 
+  padding-right:10px;
+ }
+a {
+  color: #06038d;
+}
+
+.footer_ul2_amrc {
+  margin:0px; 
+  list-style-type:none;
+   padding:0px;
+  }
+.footer_ul2_amrc li p {
+   display:table; 
+  }
+
+.footer_ul2_amrc li a:hover { 
+  text-decoration:none;
+}
+
+.footer_ul2_amrc li i { 
+  margin-top:5px;
+}
+
+
+.bottom_border { 
+  border-bottom:1px solid #323f45; 
+  padding-bottom:20px;
+}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.foote_bottom_ul_amrc li { 
+  display:inline;
+}
+.foote_bottom_ul_amrc li a { 
+  color:#999; 
+  margin:0 12px;
+}
+
+.social_footer_ul { 
+  display:table; 
+  margin:15px auto 0 auto; 
+  list-style-type:none;  
+}
+
+.social_footer_ul li { 
+  padding-left:20px; 
+  padding-top:10px; 
+  float:left; 
+}
+
+.social_footer_ul li a {
+   color:#CCC; 
+   border:1px solid #CCC; 
+   padding:8px;
+   border-radius:50%;
+  }
+
+.social_footer_ul li i {  
+  width:20px; 
+  height:20px; 
+  text-align:center;
+}
